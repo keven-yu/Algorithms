@@ -3,3 +3,4 @@
 # Content
 * [Use Java generics implment linkedstack.](https://github.com/keven-yu/Algorithms/tree/master/src/stack)--2016.11.1
 * [Use Java generics implemnt linkedqueue.](https://github.com/yu-linfeng/Algorithms/tree/master/src/queue)--2016.11.2
+* [Use Java generics implemnt single linkedlist,including add,remove,trverse,reverese method.](https://github.com/yu-linfeng/Algorithms/tree/master/src/linkedlist)--2016.11.2
