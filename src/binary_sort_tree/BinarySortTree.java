@@ -50,4 +50,33 @@ public class BinarySortTree {
 		
 		return recursiveSearch(tree.getLchild(), element);
 	}
+	
+	/**
+	 * Insertion of binary sort tree.
+	 * @param tree
+	 * @param newNode
+	 * @return
+	 */
+	public void insert(Node tree, int item){
+		Node newNode = new Node(item, null, null);
+		Node p = tree;
+		Node prev = null;
+		while (p != null){
+			prev = p;
+			if (p.getItem() > newNode.getItem()){
+				p = p.getLchild();
+			} else if (p.getItem() < newNode.getItem()){
+				p = p.getRchild();
+			} else {
+				return ;
+			}
+		}
+		if (null == tree){
+			tree = newNode;
+		} else if (prev.getItem() > newNode.getItem()){
+			prev.setLchild(newNode);
+		} else {
+			prev.setRchild(newNode);
+		}
+	}
 }

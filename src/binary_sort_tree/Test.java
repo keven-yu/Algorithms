@@ -36,7 +36,9 @@ public class Test {
 //			System.out.println("no the element");
 //		}
 		
-		Node searchResult = binarySortTree.recursiveSearch(a, 13);
+		binarySortTree.insert(a, 13);
+		
+		Node searchResult = binarySortTree.recursiveSearch(a, 15);
 		if (null != searchResult){
 			System.out.println(searchResult.getItem());
 		} else {
