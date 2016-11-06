@@ -9,4 +9,4 @@
 
 ## Binary tree
 * [Binary tree,including preorder recursive traversal,inorder recursive traversal,postorder recursive traversal,levelorder traversal method.](https://github.com/yu-linfeng/Algorithms/tree/master/src/binary_tree)
-* [Binary sort tree(BST),including non-recursive search,recursive search method.](https://github.com/yu-linfeng/Algorithms/tree/master/src/binary_sort_tree)
+* [Binary sort tree(BST),including non-recursive search,recursive search,insert(non-recursive) method.](https://github.com/yu-linfeng/Algorithms/tree/master/src/binary_sort_tree)
