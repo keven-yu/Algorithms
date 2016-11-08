@@ -79,4 +79,51 @@ public class BinarySortTree {
 			prev.setRchild(newNode);
 		}
 	}
+	
+	/**
+	 * Delete the binary tree node.
+	 * @param tree
+	 * @param item
+	 * @return
+	 */
+	public int delete(Node tree, int item){
+		Node p = tree;
+		Node pre = null;
+		while ((null != p) && (p.getItem() != item)){
+			if (p.getItem() > item){
+				pre = p;
+				p = p.getLchild();
+			} else {
+				pre = p;
+				p = p.getRchild();
+			}
+		}
+		if (null == p){
+			return 0;
+		}
+		if (p.getLchild() == null){
+			if (pre.getLchild() == p){
+				pre.setLchild(p.getRchild());
+			} else {
+				pre.setRchild(p.getRchild());
+			}
+		} else {
+			Node q = p.getLchild();
+			Node qpre = q;
+			
+			while (q.getRchild() != null){
+				qpre = q;
+				q = q.getRchild();
+			}
+			
+			if (qpre == p.getLchild()){
+				p.setItem(qpre.getItem());
+				p.setLchild(qpre.getLchild());
+			} else {
+				p.setItem(q.getItem());
+				qpre.setRchild(q.getLchild());
+			}
+		}
+		return 1;
+	}
 }

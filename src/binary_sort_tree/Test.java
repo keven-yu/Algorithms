@@ -36,14 +36,16 @@ public class Test {
 //			System.out.println("no the element");
 //		}
 		
-		binarySortTree.insert(a, 13);
+//		binarySortTree.insert(a, 13);
 		
-		Node searchResult = binarySortTree.recursiveSearch(a, 15);
+		Node searchResult = binarySortTree.recursiveSearch(a, 19);
 		if (null != searchResult){
 			System.out.println(searchResult.getItem());
 		} else {
 			System.out.println("no the element");
 		}
+		
+		System.out.println(binarySortTree.delete(a, 19));
 	}
 
 }
